@@ -2,45 +2,14 @@
 <!DOCTYPE html> <!--Dit is de 2e pagina van mijn site-->
 <html> <!--dit is het html-element-->
 <head>
+  <link rel="stylesheet" type+"text/css" href="opmaak.css"/>
     <title> Feiten en cijfers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 
 
-  body {
-    background-color: blanchedalmond;
-  }
-          body {margin:0;}
-          .navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-</style>
+  
 </head>
 <body>
 
@@ -81,34 +50,7 @@
 
     <img src="kaart 2.png" alt="Informatie" width="700" height="600">
      
-    <p id="tijd"></p>
-
-    <script>
-        // JavaScript om de huidige tijd te verkrijgen en weer te geven
-        function toonHuidigeTijd() {
-            // Maak een nieuwe datumobject
-            var huidigeTijd = new Date();
-
-            // Haal de uren, minuten en seconden op
-            var uren = huidigeTijd.getHours();
-            var minuten = huidigeTijd.getMinutes();
-            var seconden = huidigeTijd.getSeconds();
-
-            // Voeg een nul toe aan het begin als de waarde kleiner is dan 10
-            uren = (uren < 10 ? "0" : "") + uren;
-            minuten = (minuten < 10 ? "0" : "") + minuten;
-            seconden = (seconden < 10 ? "0" : "") + seconden;
-
-            // Bouw de tijdsstring
-            var tijdString = uren + ":" + minuten + ":" + seconden;
-
-            // Zet de tijdsstring in het HTML-element met id "tijd"
-            document.getElementById("tijd").innerHTML = tijdString;
-        }
-
-        // Roep de functie om de tijd te tonen elke seconde aan
-        setInterval(toonHuidigeTijd, 1000);
-    </script>
+    
 
 
 
