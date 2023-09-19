@@ -81,5 +81,39 @@
 
     <img src="kaart 2.png" alt="Informatie" width="700" height="600">
      
+    <p id="tijd"></p>
+
+    <script>
+        // JavaScript om de huidige tijd te verkrijgen en weer te geven
+        function toonHuidigeTijd() {
+            // Maak een nieuwe datumobject
+            var huidigeTijd = new Date();
+
+            // Haal de uren, minuten en seconden op
+            var uren = huidigeTijd.getHours();
+            var minuten = huidigeTijd.getMinutes();
+            var seconden = huidigeTijd.getSeconds();
+
+            // Voeg een nul toe aan het begin als de waarde kleiner is dan 10
+            uren = (uren < 10 ? "0" : "") + uren;
+            minuten = (minuten < 10 ? "0" : "") + minuten;
+            seconden = (seconden < 10 ? "0" : "") + seconden;
+
+            // Bouw de tijdsstring
+            var tijdString = uren + ":" + minuten + ":" + seconden;
+
+            // Zet de tijdsstring in het HTML-element met id "tijd"
+            document.getElementById("tijd").innerHTML = tijdString;
+        }
+
+        // Roep de functie om de tijd te tonen elke seconde aan
+        setInterval(toonHuidigeTijd, 1000);
+    </script>
+
+
+
+
+
+
         </body> 
         </html>
