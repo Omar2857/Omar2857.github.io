@@ -31,76 +31,85 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            text-align: center; /* Alle tekst centreren */
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto; /* Centreren van de hele inhoud */
         }
         h1 {
             color: #060606;
             text-align: center;
         }
         h2 {
-            color: #080808;
-            text-align: center;
+            color: #070707;
         }
         p {
-            color: #070707;
+            color: #060606;
             margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h2>Het Binaire Stelsel</h2>
+        <h1>Het Binaire Stelsel</h1>
     </header>
     <main>
         <section>
-            <h2>Introductie</h2>
-            <p>Het binaire stelsel, ook wel het tweestelsel genoemd, is een fundamenteel concept in de wereld van computers en digitale elektronica. Het binaire stelsel maakt gebruik van slechts twee symbolen: 0 en 1.</p>
+            <h2>Wat is het Binair Stelsel?</h2>
+            <p>Het binaire stelsel, ook wel bekend als het grondtal 2-stelsel, is een getalstelsel dat slechts twee cijfers gebruikt om getallen te representeren: 0 en 1. In tegenstelling tot het decimale stelsel, dat 10 cijfers gebruikt (0-9), maakt het binaire stelsel gebruik van een eenvoudige tweecijferige notatie om informatie op een gestructureerde manier weer te geven.</p>
         </section>
         
         <section>
-            <h2>Structuur van Binaire Getallen</h2>
+            <h2>Grondslag 2</h2>
+            <p>De term "grondslag 2" verwijst naar het feit dat het binaire stelsel is gebaseerd op machten van 2. Elk cijfer in een binair getal vertegenwoordigt een macht van 2, beginnend bij 2^0, 2^1, 2^2, enzovoort. Dit maakt het binaire stelsel bijzonder geschikt voor digitale elektronica, waarin informatie als elektrische signalen wordt opgeslagen en verwerkt.</p>
+        </section>
+        
+        <section>
+            <h2>Binaire Getallen</h2>
+            <p><strong>Binaire Notatie:</strong><br>
+            Binaire getallen bestaan uit een reeks 0'en en 1'en. Elke positie in een binair getal vertegenwoordigt een bepaalde macht van 2. Bijvoorbeeld, het binaire getal 1101 komt overeen met 1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 in decimale notatie, wat resulteert in het getal 13.</p>
+            
             <p><strong>Bit:</strong><br>
-            Een bit, afgeleid van "binary digit," is de kleinste eenheid van informatie in het binaire stelsel en kan de waarden 0 of 1 aannemen.</p>
+            Een enkel cijfer in een binair getal wordt een "bit" genoemd, wat een afkorting is voor "binary digit." Een bit kan de waarde 0 of 1 hebben en is de kleinste eenheid van informatie in het binaire stelsel.</p>
             
             <p><strong>Byte:</strong><br>
-            Een byte bestaat uit 8 bits en wordt vaak gebruikt om tekens en gegevens op te slaan in computers.</p>
-            
-            <p><strong>Nibble:</strong><br>
-            Een nibble is een groep van 4 bits, wat de helft van een byte is.</p>
-        </section>
-        
-        <section>
-            <h2>Omzetting tussen Binaire en Decimale Stelsels</h2>
-            <p><strong>Omzetten naar Binaire:</strong><br>
-            Om een decimaal getal naar binair om te zetten, herhaal je het delen door 2 en noteer je de resten van rechts naar links.</p>
-            
-            <p><strong>Omzetten naar Decimaal:</strong><br>
-            Om een binaire reeks naar decimaal om te zetten, vermenigvuldig de waarden van elke positie met de overeenkomstige machten van 2 en tel ze op.</p>
+            Een "byte" bestaat uit 8 bits en wordt vaak gebruikt om gegevens op te slaan en te verwerken in computers en digitale systemen. Een byte kan 256 verschillende waarden representeren, variërend van 00000000 tot 11111111 in binaire notatie.</p>
         </section>
 
         <section>
-            <h2>Toepassingen</h2>
-            <p><strong>Computers:</strong><br>
-            Het binaire stelsel is de basis voor alle digitale computers en vormt de kern van hun werking.</p>
+            <h2>Toepassingen van het Binair Stelsel</h2>
+            <p><strong>Computers en Digitale Elektronica:</strong><br>
+            Het binaire stelsel vormt de kern van computers en digitale elektronica. Computers gebruiken binaire codes om gegevens op te slaan, te verwerken en te communiceren. Het schakelen tussen aan-uittoestanden (0 en 1) in elektronische schakelingen maakt complexe berekeningen en gegevensverwerking mogelijk.</p>
             
             <p><strong>Telecommunicatie:</strong><br>
-            Binaire gegevens worden gebruikt voor gegevensoverdracht in telefoonlijnen en internetverbindingen.</p>
+            In telecommunicatiesystemen worden gegevens verzonden en ontvangen als binaire signalen, waarbij 0 en 1 staan voor verschillende elektrische of optische signalen. Dit maakt gegevensoverdracht over lange afstanden mogelijk, zoals telefoongesprekken en internetverkeer.</p>
+            
+            <p><strong>Gegevensopslag:</strong><br>
+            Harde schijven, solid-state drives (SSD's) en andere opslagapparaten slaan gegevens op in de vorm van binaire getallen. Het binaire stelsel maakt efficiënte opslag en betrouwbare gegevensreproductie mogelijk.</p>
+        </section>
+
+        <section>
+            <h2>Binair in de Praktijk</h2>
+            <p><strong>Programmeren:</strong><br>
+            Programmeurs schrijven code in programmeertalen die gebruikmaken van binaire getallen om instructies aan computers te geven. Deze instructies worden vertaald in machinetaal, die begrepen wordt door de CPU van een computer.</p>
+            
+            <p><strong>Beeldverwerking:</strong><br>
+            Afbeeldingen worden vaak opgeslagen en verwerkt met behulp van binaire gegevens. Kleuren worden gecodeerd met binaire getallen, en beeldverwerkingstechnieken omvatten bewerkingen op deze binaire representaties.</p>
+            
+            <p><strong>Codering en Cryptografie:</strong><br>
+            Binaire codering is essentieel in cryptografie voor het versleutelen en beveiligen van gegevens. Algoritmen gebruiken binaire operaties om geheime boodschappen te coderen en te decoderen, waardoor vertrouwelijke informatie wordt beschermd.</p>
         </section>
 
         <section>
             <h2>Conclusie</h2>
-            <p>Het begrijpen van het binaire stelsel is van essentieel belang voor iedereen die geïnteresseerd is in computerwetenschappen en digitale technologieën. Het vormt de basis van hoe computers informatie opslaan, verwerken en communiceren.</p>
+            <p>Het begrijpen van het binaire stelsel is van fundamenteel belang voor iedereen die zich bezighoudt met informatietechnologie en digitale systemen. Het vormt de basis van hoe moderne technologieën werken, en het vermogen om te communiceren en te werken met binaire gegevens is cruciaal in de hedendaagse digitale wereld.</p>
         </section>
     </main>
 
+         
     
       
           
      
-      
-    
-      
-      
       
     
     
