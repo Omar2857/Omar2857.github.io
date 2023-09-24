@@ -13,6 +13,12 @@ body {
   width: 100%;
 }
 
+body {
+text-align: center;
+}
+
+
+
 .navbar a {
   float: left;
   display: block;
