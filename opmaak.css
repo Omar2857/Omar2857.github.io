@@ -67,13 +67,18 @@ body {
          </div>
 
         
-    
+        footer {
+          background-colour:
+        }
 
 
          footer {
-          background-color: #000000; /* Zwarte achtergrondkleur */
-          color: #ffffff; /* Witte tekstkleur */
+          background-color:#0a0a0a; /* Blauwe achtergrondkleur */
+          color: #ffff; /* Witte tekstkleur */
           padding: 20px; /* Ruimte rondom de inhoud in de footer */
           text-align: center; /* Tekst gecentreerd in de footer */
-         }
-          
+      }
+      
+      table{
+        text-align: center;
+      }
