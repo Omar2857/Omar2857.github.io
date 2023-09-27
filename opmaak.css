@@ -67,7 +67,7 @@ body {
          </div>
 
          footer {
-          background-color:#0a0a0a; /* Blauwe achtergrondkleur */
+          background-colour: #000000; /* Zwarte achtergrondkleur */
           color: #ffff; /* Witte tekstkleur */
           padding: 20px; /* Ruimte rondom de inhoud in de footer */
           text-align: center; /* Tekst gecentreerd in de footer */
