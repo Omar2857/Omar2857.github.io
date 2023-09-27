@@ -67,11 +67,7 @@ body {
          </div>
 
         
-         <footer>
-         <div class="footer-left">Made by Omar</div>
-         <div class="footer-center">Informatica</div>
-         <div class="footer-right">&copy; 2023</div>
-         </footer>
+    
 
 
          footer {
@@ -79,5 +75,5 @@ body {
           color: #ffffff; /* Witte tekstkleur */
           padding: 20px; /* Ruimte rondom de inhoud in de footer */
           text-align: center; /* Tekst gecentreerd in de footer */
-      }
+         }
           
