@@ -41,8 +41,8 @@ body {
   height: 1500px; /* Used in this example to enable scrolling */
 }
 footer {
-  background-color: cornflowerblue;
-  color: #000000;
+  background-color: rgb(9, 10, 10);
+  color: #f8f3f3;
   padding: 15px;
   text-align: center;
 }
