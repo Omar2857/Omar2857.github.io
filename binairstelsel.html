@@ -27,12 +27,48 @@
     <P STYLE="font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Binair Stelsel</P>
   </header>
 <main>
+
   <section>
-    <p> Het binaire stelsel, ook wel het tweetallige stelsel genoemd, is een wiskundig stelsel dat gebruikt wordt in computers en digitale elektronica. In tegenstelling tot het decimale stelsel, dat gebaseerd is op tien cijfers (0-9), is het binaire stelsel gebaseerd op slechts twee cijfers: 0 en 1. Dit stelsel vormt de basis van de digitale informatieverwerking omdat het gemakkelijk te implementeren is met elektronische schakelingen, waarbij stroom aan of uit kan zijn, wat overeenkomt met de binaire 0 en 1.</p>
+   <h1>Binair Stelsel Uitleg</h1>
+    <p>Het binaire stelsel is een stelsel met slechts twee cijfers: 0 en 1.</p>
+    <p>Een enkel binaire cijfer wordt een "bit" genoemd.</p>
+
+    <h2>Voorbeelden van binaire getallen:</h2>
+    <ul>
+        <li>0 in binaire notatie is 0 in het decimale stelsel.</li>
+        <li>1 in binaire notatie is 1 in het decimale stelsel.</li>
+        <li>10 in binaire notatie is 2 in het decimale stelsel.</li>
+        <li>11 in binaire notatie is 3 in het decimale stelsel.</li>
+        <li>100 in binaire notatie is 4 in het decimale stelsel.</li>
+        <li>101 in binaire notatie is 5 in het decimale stelsel.</li>
+        <li>110 in binaire notatie is 6 in het decimale stelsel.</li>
+        <li>111 in binaire notatie is 7 in het decimale stelsel.</li>
+    </ul>
+
+    <h2>Binair naar Decimaal Converter</h2>
+    <p>Voer een binair getal in en klik op "Converteren" om het naar decimaal om te zetten:</p>
+    <input type="text" id="binaryInput">
+    <button onclick="convertBinaryToDecimal()">Converteren</button>
+    <p>Decimale waarde: <span id="decimalOutput"></span></p>
+
+    <script>
+        function convertBinaryToDecimal() {
+            const binaryInput = document.getElementById("binaryInput").value;
+            const decimalOutput = document.getElementById("decimalOutput");
+            
+            // Controleren of het ingevoerde waarde geldig is
+            if (/^[01]+$/.test(binaryInput)) {
+                const decimalValue = parseInt(binaryInput, 2); // 2 geeft aan dat het een binaire representatie is
+                decimalOutput.textContent = decimalValue;
+            } else {
+                decimalOutput.textContent = "Ongeldige invoer";
+            }
+        }
+    </script>
   </section>
 
   <section>
-    <h1> Hier een uitlegvideo over het binairstelsel</h1>
+    <h1> Een uitlegvideo over het Binairstelsel!!</h1>
     <iframe width="716" height="403" src="https://www.youtube.com/embed/TeQH_Bei8iU" title="Binaire getallen omrekenen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </section>
 
