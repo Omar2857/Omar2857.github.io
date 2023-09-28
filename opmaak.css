@@ -34,7 +34,7 @@ body {margin:0;}
   div.figure {
   float: right;
   width: 30%;
-  border: thin silver solid;
+  border: thin rgb(86, 193, 217) solid;
   margin: 0.5em;
   padding: 0.5em;
   }
@@ -45,7 +45,7 @@ body {margin:0;}
   text-indent: 0;
   }
   body {
-  background-color: rgba(68, 81, 88, 0.57); /* Hier stel je de achtergrondkleur in */
+  background-color: rgba(129, 196, 232, 0.256); /* Hier stel je de achtergrondkleur in */
   }
   table {
   border-collapse: collapse; 
@@ -78,8 +78,8 @@ body {margin:0;}
   top: 50%; /* Plaats de tekst verticaal in het midden van de container */
   left: 0; /* Plaats de tekst helemaal links binnenin de container */
   transform: translateY(-50%); /* Centreer de tekst verticaal */
-  background-color: rgba(171, 131, 131, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
-  color: #10010874;
+  background-color: rgba(118, 155, 229, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
+  color: #10101074;
   padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
   }
   .container {
