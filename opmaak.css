@@ -1,90 +1,92 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+body {margin:0;}
+  .navbar {
   overflow: hidden;
-  background-color:   #60739f90
+  background-color: #415779ad;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+  body {
+  text-align:left;
   }
 
-  li {
+  .navbar a {
   float: left;
-  border-right:1px solid #bbb;
-  }
-
-  li:last-child {
-  border-right: none;
-  }
-
-  li a {
   display: block;
-  color: white;
+  color: #250606;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
   }
 
-  li a:hover:not(.active) {
-  background-color: #111;
+  .navbar a:hover {
+  background: #ddd;
+  color: rgb(84, 96, 134);
   }
 
-  .active {
-  background-color: #04AA6D;
+  .main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
   }
 
+  div.figure {
+  float: right;
+  width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  }
+  div.figure p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  }
   body {
-  background-color: #142929aa
+  background-color: rgba(68, 81, 88, 0.57); /* Hier stel je de achtergrondkleur in */
+  }
+  table {
+  border-collapse: collapse; 
+  width: 100%;
   }
 
-  h1 {
-  color: #133b3bba
+  th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
   }
 
-  p {
-  color: #133b3bba
+  th {
+  background-color: #5a94a8;
+  }
+  /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
+  .container {
+  position /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
+  width: 300px /* Pas de breedte van de container aan aan je behoeften */
   }
 
-  p {
-  font-size: 20px
+  /* CSS-regels voor de afbeelding */
+  .image {
+  width: 100%; /* Laat de afbeelding de volledige breedte van de container innemen */
   }
 
-  footer {
-  padding-top: 25px
+  /* CSS-regels voor de tekst */
+  .text {
+  position: absolute; /* Stel absolute positionering in om tekst over de afbeelding te plaatsen */
+  top: 50%; /* Plaats de tekst verticaal in het midden van de container */
+  left: 0; /* Plaats de tekst helemaal links binnenin de container */
+  transform: translateY(-50%); /* Centreer de tekst verticaal */
+  background-color: rgba(171, 131, 131, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
+  color: #10010874;
+  padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
   }
-
-  p {
-  margin-bottom:20px
-  }
-
-  img {
-  margin-top: 20px
-  }
-
-  h1 {
-  margin-top: 38px
-  }
-
-  h1 {
-  margin-bottom: 25px;
-  }
-
-  a:link {
-  text-decoration: none;
-  }
-
-  a:visited {
-  text-decoration: none;
-  }
-
-  a:hover {
-  text-decoration: underline;
-  }
-
-  a:active {
-  text-decoration: underline;
-  }
-
-  .linkjes {
-  font-size: 20px;
+  .container {
+  display: flex;
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  height: 100vh; /* Volledige hoogte van het venster */
   }
 
   footer {
