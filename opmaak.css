@@ -2,7 +2,7 @@ body {margin:0;}
   .navbar {
   overflow: hidden;
   background-color: #5186d757;
-  background-image: url("background.jpg")
+  background-image: url('background.jpg');
   position: fixed;
   top: 0;
   width: 100%;
