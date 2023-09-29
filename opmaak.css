@@ -45,6 +45,7 @@ body {margin:0;}
   text-indent: 0;
   }
   body {
+  background-image: background.jpg;
   background-color: rgba(129, 196, 232, 0.256); /* Hier stel je de achtergrondkleur in */
   }
   table {
