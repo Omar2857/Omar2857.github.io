@@ -1,16 +1,24 @@
-body {margin:0;}
-  .navbar {
+/* Reset de standaardmarges van het hele document */
+body {
+  margin: 0;
+}
+
+/* Stijl voor de navigatiebalk */
+.navbar {
   overflow: hidden;
   background-color: #5186d757;
-  position: fixed;
+  position: fixed; /* Hier wordt de navigatiebalk vastgezet bovenaan het scherm */
   top: 0;
   width: 100%;
-  }
-  body {
-  text-align:left;
-  }
+}
 
-  .navbar a {
+/* Instellingen voor de tekst op de pagina */
+body {
+  text-align: left;
+}
+
+/* Stijl voor koppelingen in de navigatiebalk */
+.navbar a {
   float: left;
   display: block;
   color: #250606;
@@ -18,89 +26,97 @@ body {margin:0;}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  }
+}
 
-  .navbar a:hover {
+/* Stijl voor koppelingen in de navigatiebalk bij hover */
+.navbar a:hover {
   background: #ddd;
   color: rgb(84, 96, 134);
-  }
+}
 
-  .main {
+/* Stijl voor de hoofdinhoud van de pagina */
+.main {
   padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-  }
+  height: 1500px; /* Hier wordt de hoogte van de hoofdinhoud ingesteld, waardoor scrollen mogelijk is */
+}
 
-  div.figure {
+/* Stijl voor afbeeldingen en tekstcontainers */
+div.figure {
   float: right;
   width: 30%;
   border: thin rgb(86, 193, 217) solid;
   margin: 0.5em;
   padding: 0.5em;
-  }
-  div.figure p {
+}
+div.figure p {
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
-  }
-  body {
-  background-image: background.jpg;
-  background-color: rgba(129, 196, 232, 0.256); /* Hier stel je de achtergrondkleur in */
-  }
-  table {
-  border-collapse: collapse; 
-  width: 100%;
-  }
+}
 
-  th, td {
+/* Stijl voor de achtergrond van het hele document */
+body {
+  background-image: image(background.jpg);
+  background-color: rgba(129, 196, 232, 0.256); /* Hier wordt de achtergrondkleur ingesteld met een semi-transparante overlay */
+}
+
+/* Stijl voor tabelopmaak */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
-  }
-
-  th {
+}
+th {
   background-color: #5a94a8;
-  }
-  /* CSS-regels voor de container die zowel de afbeelding als de tekst bevat */
-  .container {
-  position /* Zorg ervoor dat de positionering relatief is voor absolute positionering binnenin */
-  width: 300px /* Pas de breedte van de container aan aan je behoeften */
-  }
+}
 
-  /* CSS-regels voor de afbeelding */
-  .image {
-  width: 100%; /* Laat de afbeelding de volledige breedte van de container innemen */
-  }
+/* Stijl voor een container die zowel een afbeelding als tekst bevat */
+.container {
+  position: relative; /* Correctie: er ontbrak een dubbelepunt na "position" */
+  width: 300px; /* Pas de breedte van de container aan zoals nodig */
+}
 
-  /* CSS-regels voor de tekst */
-  .text {
-  position: absolute; /* Stel absolute positionering in om tekst over de afbeelding te plaatsen */
-  top: 50%; /* Plaats de tekst verticaal in het midden van de container */
-  left: 0; /* Plaats de tekst helemaal links binnenin de container */
-  transform: translateY(-50%); /* Centreer de tekst verticaal */
-  background-color: rgba(118, 155, 229, 0.7); /* Voeg een semi-transparante achtergrond toe aan de tekst voor leesbaarheid */
+/* Stijl voor de afbeelding binnen de container */
+.image {
+  width: 100%;
+}
+
+/* Stijl voor de tekst bovenop de afbeelding */
+.text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(118, 155, 229, 0.7);
   color: #10101074;
-  padding: 10px; /* Voeg wat ruimte rondom de tekst toe voor betere leesbaarheid */
-  }
-  .container {
-  display: flex;
-  justify-content: center; /* Horizontaal centreren */
-  align-items: center; /* Verticaal centreren */
-  height: 100vh; /* Volledige hoogte van het venster */
-  }
+  padding: 10px;
+}
 
-  footer {
+/* Stijl voor het centreren van de container in het venster */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Stijl voor de footer onderaan de pagina */
+footer {
   background-color: rgb(9, 10, 10);
   color: #f8f3f3;
   padding: 15px;
   text-align: center;
-  }
-  .container {
+}
+
+/* Stijl voor de container met grid-indeling */
+.container {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
-  }
-
-
-
+}
