@@ -61,7 +61,7 @@ div.figure p {
 
 /* Stijl voor de achtergrond van het hele document */
 body {
-  background-image: image(Afbeeldingen/background.jpg);
+  background-image: image(background.jpg);
   background-color: rgba(129, 196, 232, 0.256); /* Hier wordt de achtergrondkleur ingesteld met een semi-transparante overlay */
 }
 
