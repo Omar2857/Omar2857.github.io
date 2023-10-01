@@ -10,10 +10,13 @@ body {
   position: fixed; /* Hier wordt de navigatiebalk vastgezet bovenaan het scherm */
   top: 0;
   width: 100%;
+  background-image: url('background.jpg'); /* achtergrond afbeelding in je menu */
+  background-size: cover; /* Hiermee wordt de afbeelding geschaald om de hele achtergrond te bedekken */
+  background-repeat: no-repeat; /* Hiermee wordt herhaling van de afbeelding voorkomen */
 }
 
 /* Instellingen voor de tekst op de pagina */
-body {
+{
   text-align: left;
 }
 
@@ -115,7 +118,7 @@ footer {
 }
 
 /* Stijl voor de container met grid-indeling */
-.container {
+ {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
