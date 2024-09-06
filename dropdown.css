@@ -1,64 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="opmaak.css"/> <!-- Dit is een koppeling naar een extern CSS-bestand voor de opmaak van de pagina. -->
-    <title>Homepage</title> <!-- Dit is de titel van de webpagina die in de browser-tab wordt weergegeven. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Dit definieert de viewport-instellingen voor responsief ontwerp. -->
-    </head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+/* Standaard styling voor de navigatiebalk */
+nav {
+    background-color: #333;
+    overflow: hidden;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown styling */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown-content li {
+    float: none;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-</style>
-</head>
-<body style="background-color:white;">
-
-<h2>Hoverable Dropdown</h2>
-<p>Move the mouse over the button to open the dropdown menu.</p>
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-
-</body>
-</html>
+/* Laat het dropdown-menu zien bij hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
