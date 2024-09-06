@@ -1,36 +1,57 @@
-<!DOCTYPE html> <!-- Dit definieert de versie van HTML die wordt gebruikt, in dit geval HTML5. -->
-<html> <!-- Dit is het begin van het HTML-document. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-   <head>
-    <link rel="stylesheet" type="text/css" href="opmaak.css"/> <!-- Dit is een koppeling naar een extern CSS-bestand voor de opmaak van de pagina. -->
-    <title>Homepage</title> <!-- Dit is de titel van de webpagina die in de browser-tab wordt weergegeven. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Dit definieert de viewport-instellingen voor responsief ontwerp. -->
-   </head>
-   <body>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-<ul class="top-level-menu">
-    <li><a href="index.html">About</a></li>
-    <li><a href="index.html">Services</a></li>
-    <li>
-        <a href="index.html">Offices</a>
-        <ul class="second-level-menu">
-            <li><a href="Fysiekelaag.html">Chicago</a></li>
-            <li><a href="Logischelaag.html">Los Angeles</a></li>
-            <li><a href="Toepassingslaag.html">Los Angeles</a></li>
-            <li>
-                <a href="index.html">New York</a>
-                <ul class="third-level-menu">
-                    <li><a href="index.html">Information</a></li>
-                    <li><a href="index.html">Book a Meeting</a></li>
-                    <li><a href="index.html">Testimonials</a></li>
-                    <li><a href="index.html">Jobs</a></li>
-                </ul>
-            </li>
-            <li><a href="index.html">Seattle</a></li>
-        </ul>
-    </li>
-    <li><a href="index.html">Contact</a></li>
-</ul>
-<header>
-<h1></h1>
-</header>
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body style="background-color:white;">
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
+</html>
