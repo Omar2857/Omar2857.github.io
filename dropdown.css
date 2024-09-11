@@ -1,29 +1,52 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Menu</title>
-  <link rel="stylesheet" href="opmaak.css">
-</head>
-<body>
+/* Standaard styling voor menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
 
-<nav> <!--dit is de navigatie bar-->
-<a href="index.html">Homepage</a> <!-- Een koppeling naar de startpagina. -->
-<a href="informatica.html">Algemene informatie</a> <!-- Een koppeling naar de pagina met algemene informatie. -->
-<a href="binairstelsel.html">Binair stelsel</a> <!-- Een koppeling naar de pagina over het binaire stelsel. -->
-<a href="kleurmodellen.html">Kleurmodellen</a> <!-- Een koppeling naar de pagina over kleurmodellen. -->
-<a href="bestandsformaten.html"> Bestandsformaten</a> <!-- Een koppeling naar de pagina over bestandsformaten. -->
-<a href="compressie.html"> Compressie</a> <!-- Een koppeling naar de pagina over compressie. -->
-<li class="dropdown active">
-    <a href="Drielagenmodel.html" class="dropbtn">Drielagenmodel</a>
-    <div class="dropdown-content">
-        <a href="fysiekelaag.html" class="active">Fysieke laag</a>
-        <a href="logischelaag.html">Logische laag</a>
-        <a href="toepassingslaag.html">Toepassings laag</a>
-    </div>
-</ul> <!--hier eindigt de unordened list-->
-</nav> <!--hier eindigt de navigatie bar-->
+.menu li {
+  display: inline-block;
+  position: relative;
+}
 
-</body>
-</html>
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+}
+
+.menu li a:hover {
+  background-color: #575757;
+}
+
+/* Dropdown-menu styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Toon dropdown bij hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
