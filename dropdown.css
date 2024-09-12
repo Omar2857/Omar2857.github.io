@@ -68,8 +68,8 @@ nav {
 }
 
 .menu li {
-  margin: 0;
-  padding: 0;
+  margin: 100;
+  padding: 100;
 }
 
 .menu li a {
@@ -80,12 +80,12 @@ nav {
 }
 
 .menu li a:hover {
-  background-color: #575757;
+  background-color: #15c7d3;
 }
 
 /* Reset de standaardmarges van het hele document */
 body {
-  margin: 0;
+  margin: 100;
 }
 
 /* Stijl voor de navigatiebalk */
