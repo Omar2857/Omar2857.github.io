@@ -95,7 +95,7 @@ body {
   position: fixed; /* Hier wordt de navigatiebalk vastgezet bovenaan het scherm */
   top: 0;
   width: 100%;
-  background-image: url('Afbeeldingen/background.jpg'); /* achtergrond afbeelding in je menu */
+  background-image: url(); /* achtergrond afbeelding in je menu */
   background-size: cover; /* Hiermee wordt de afbeelding geschaald om de hele achtergrond te bedekken */
   background-repeat: no-repeat; /* Hiermee wordt herhaling van de afbeelding voorkomen */
 }
