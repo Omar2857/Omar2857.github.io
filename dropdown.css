@@ -6,9 +6,15 @@ ul {
   position: relative;
 }
 
+/* Stijl voor de dropdown-container */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
 /* Stijl voor de dropdownknop */
 .dropbtn {
-  display: inline-block;
+  display: block;
   padding: 16px;
   text-decoration: none;
   color: #000; /* Zwarte tekstkleur voor duidelijkheid */
@@ -47,7 +53,7 @@ ul {
   color: #fff; /* Witte tekstkleur bij hover */
 }
 
-/* Toon het dropdown menu bij hover op de knop */
+/* Toon het dropdown menu bij hover op de hele .dropdown-container */
 .dropdown:hover .dropdown-content {
   display: block;
 }
