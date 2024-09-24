@@ -3,34 +3,36 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: relative; /* Zorgt ervoor dat dropdown-menu's goed worden gepositioneerd */
+  position: relative;
 }
 
 /* Stijl voor de dropdownknop */
 .dropbtn {
-  display: block;
+  display: inline-block;
   padding: 16px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9); /* Witte kleur voor betere zichtbaarheid */
-  background-color: #333; /* Donkere achtergrond voor contrast */
-  border: none;
+  color: #000; /* Zwarte tekstkleur voor duidelijkheid */
+  background-color: transparent; /* Transparante achtergrond */
+  border: none; /* Geen knopstijl */
   cursor: pointer;
   font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
-/* Standaard verbergen van het dropdown-menu */
+/* Dropdown content (menu) */
 .dropdown-content {
-  display: none;
+  display: none; /* Verberg het dropdown menu standaard */
   position: absolute;
-  background-color: rgba(171, 250, 213, 0.9); /* Iets minder transparantie */
+  background-color: rgba(171, 250, 213, 0.9); /* Iets minder transparant voor leesbaarheid */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  top: 100%; /* Plaats het dropdown-menu direct onder de knop */
+  top: 100%; /* Plaats het menu direct onder de knop */
+  left: 0;
 }
 
-/* Stijl voor de dropdown links */
-.dropdown-content li a {
+/* Stijl voor dropdown links */
+.dropdown-content a {
   color: #000; /* Zwarte tekstkleur voor betere leesbaarheid */
   padding: 12px 16px;
   text-decoration: none;
@@ -39,38 +41,15 @@ ul {
   transition: background-color 0.3s ease;
 }
 
-/* Stijl voor de dropdown links als er overheen wordt gegaan */
-.dropdown-content li a:hover {
-  background-color: rgba(11, 8, 8, 0.831); /* Donkere achtergrond bij hover */
+/* Hover effect op dropdown links */
+.dropdown-content a:hover {
+  background-color: rgba(11, 8, 8, 0.831); /* Donkergrijze achtergrond bij hover */
   color: #fff; /* Witte tekstkleur bij hover */
 }
 
-/* Dropdownknop bij hover */
+/* Toon het dropdown menu bij hover op de knop */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* Verbergen van tweede-level dropdown */
-.second-level-content {
-  display: none;
-  position: absolute;
-  left: 100%; /* Plaats het tweede-level menu rechts van het eerste menu */
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Toon tweede-level dropdown bij hover op een parent item */
-.dropdown-content li:hover .second-level-content {
-  display: block;
-}
-
-/* Algemene stijl voor de dropdown container */
-.dropdown {
-  position: relative;
-  display: inline-block;
 }
 
 /* Verbeterde weergave bij kleine schermen */
@@ -79,9 +58,6 @@ ul {
     padding: 12px;
   }
   .dropdown-content {
-    min-width: 120px;
-  }
-  .second-level-content {
     min-width: 120px;
   }
 }
