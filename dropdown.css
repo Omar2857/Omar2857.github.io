@@ -11,23 +11,77 @@ ul {
   display: block;
   padding: 16px;
   text-decoration: none;
-  color: rgba(171, 250, 213, 0.9); /* Iets minder transparantie voor betere zichtbaarheid */
-  background-color: #222; /* Toegevoegd voor contrast */
+  color: rgba(255, 255, 255, 0.9); /* Witte kleur voor betere zichtbaarheid */
+  background-color: #333; /* Donkere achtergrond voor contrast */
   border: none;
   cursor: pointer;
+  font-family: Arial, sans-serif;
 }
 
 /* Standaard verbergen van het dropdown-menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(171, 250, 213, 0.9); /* Minder transparantie voor zichtbaarheid */
+  background-color: rgba(171, 250, 213, 0.9); /* Iets minder transparantie */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  top: 100%; /* Zorg ervoor dat het menu direct onder de knop komt */
+  top: 100%; /* Plaats het dropdown-menu direct onder de knop */
 }
 
 /* Stijl voor de dropdown links */
 .dropdown-content li a {
-  color: #000; /* Zwarte kleur voor betere lees
+  color: #000; /* Zwarte tekstkleur voor betere leesbaarheid */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Stijl voor de dropdown links als er overheen wordt gegaan */
+.dropdown-content li a:hover {
+  background-color: rgba(11, 8, 8, 0.831); /* Donkere achtergrond bij hover */
+  color: #fff; /* Witte tekstkleur bij hover */
+}
+
+/* Dropdownknop bij hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Verbergen van tweede-level dropdown */
+.second-level-content {
+  display: none;
+  position: absolute;
+  left: 100%; /* Plaats het tweede-level menu rechts van het eerste menu */
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Toon tweede-level dropdown bij hover op een parent item */
+.dropdown-content li:hover .second-level-content {
+  display: block;
+}
+
+/* Algemene stijl voor de dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Verbeterde weergave bij kleine schermen */
+@media screen and (max-width: 600px) {
+  .dropbtn {
+    padding: 12px;
+  }
+  .dropdown-content {
+    min-width: 120px;
+  }
+  .second-level-content {
+    min-width: 120px;
+  }
+}
