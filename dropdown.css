@@ -3,6 +3,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative; /* Zorgt ervoor dat dropdown-menu's goed worden gepositioneerd */
 }
 
 /* Stijl voor de dropdownknop */
@@ -10,45 +11,23 @@ ul {
   display: block;
   padding: 16px;
   text-decoration: none;
-  color: rgba(171, 250, 213, 0.718);
+  color: rgba(171, 250, 213, 0.9); /* Iets minder transparantie voor betere zichtbaarheid */
+  background-color: #222; /* Toegevoegd voor contrast */
+  border: none;
+  cursor: pointer;
 }
 
 /* Standaard verbergen van het dropdown-menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(171, 250, 213, 0.718);
+  background-color: rgba(171, 250, 213, 0.9); /* Minder transparantie voor zichtbaarheid */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  top: 100%; /* Zorg ervoor dat het menu direct onder de knop komt */
 }
 
 /* Stijl voor de dropdown links */
 .dropdown-content li a {
-  color: rgba(171, 250, 213, 0.718);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Stijl voor de dropdown links als er overheen wordt gegaan */
-.dropdown-content li a:hover {
-  background-color: rgba(11, 8, 8, 0.831);
-}
-
-/* Dropdownknop bij hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Verbergen van tweede-level dropdown */
-.second-level-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%; 
-  background-color: rgba(255, 255, 255, 0.718);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+  color: #000; /* Zwarte kleur voor betere lees
