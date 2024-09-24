@@ -1,63 +1,54 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
+/* Basisstijl voor het ul element */
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+/* Stijl voor de dropdownknop */
+.dropbtn {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: rgba(171, 250, 213, 0.718);
 }
 
+/* Standaard verbergen van het dropdown-menu */
 .dropdown-content {
   display: none;
-  position: fixed;
-  background-color: #f9f9f9;
+  position: absolute;
+  background-color: rgba(171, 250, 213, 0.718);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
+/* Stijl voor de dropdown links */
+.dropdown-content li a {
+  color: rgba(171, 250, 213, 0.718);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+/* Stijl voor de dropdown links als er overheen wordt gegaan */
+.dropdown-content li a:hover {
+  background-color: rgba(11, 8, 8, 0.831);
 }
 
+/* Dropdownknop bij hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Verbergen van tweede-level dropdown */
+.second-level-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%; 
+  background-color: rgba(255, 255, 255, 0.718);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
