@@ -31,12 +31,13 @@ ul {
   position: absolute;
   background-color: rgba(171, 250, 213, 0.9); /* Iets minder transparant voor leesbaarheid */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 100%; /* Plaats het menu direct onder de knop */
   left: 0;
-  opacity: 0; /* Verberg doorzichtbaar tot hover */
-  transition: opacity 0.3s ease; /* Soepele overgang */
+  visibility: hidden; /* Verberg menu door geen zichtbaarheid */
+  opacity: 0; /* Onzichtbaar maken */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Zachte overgang voor zichtbaar maken */
 }
 
 /* Stijl voor dropdown links */
@@ -58,7 +59,8 @@ ul {
 /* Toon het dropdown menu bij hover op de hele .dropdown-container */
 .dropdown:hover .dropdown-content {
   display: block;
-  opacity: 1; /* Maak het dropdown menu zichtbaar */
+  visibility: visible; /* Maak zichtbaar */
+  opacity: 1; /* Toon het menu */
 }
 
 /* Verbeterde weergave bij kleine schermen */
