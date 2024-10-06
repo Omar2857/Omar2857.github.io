@@ -17,7 +17,7 @@ ul {
   display: block;
   padding: 16px;
   text-decoration: none;
-  color: #000; /* Zwarte tekstkleur voor duidelijkheid */
+  color: #fff; /* Witte tekstkleur voor consistentie */
   background-color: transparent; /* Transparante achtergrond */
   border: none; /* Geen knopstijl */
   cursor: pointer;
@@ -27,7 +27,7 @@ ul {
 
 /* Dropdown content (menu) */
 .dropdown-content {
-  display: block; /* Houd het in de layout */
+  display: block;
   position: absolute;
   background-color: rgba(171, 250, 213, 0.9); /* Iets minder transparant voor leesbaarheid */
   min-width: 160px;
@@ -38,6 +38,7 @@ ul {
   visibility: hidden; /* Verberg het menu */
   opacity: 0; /* Onzichtbaar maken */
   transition: opacity 0.3s ease, visibility 0.3s ease; /* Zachte overgang voor zichtbaar maken */
+  white-space: nowrap; /* Zorg ervoor dat het menu niet wordt afgebroken */
 }
 
 /* Stijl voor dropdown links */
