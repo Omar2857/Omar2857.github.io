@@ -17,7 +17,7 @@ ul {
   display: block;
   padding: 16px;
   text-decoration: none;
-  color: #fff; /* Witte tekstkleur voor alle knoppen */
+  color: #050000; /* Witte tekstkleur voor alle knoppen */
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -66,7 +66,7 @@ ul {
 
 /* Stijlen voor alle kopjes, inclusief het kopje 'drielagenmodel' */
 h1, h2, h3, h4, h5, h6 {
-  color: white; /* Zorg dat alle kopjes wit zijn, ook drielagenmodel */
+  color: rgb(11, 0, 0); /* Zorg dat alle kopjes zwart zijn, ook drielagenmodel */
 }
 
 /* Verbeterde weergave bij kleine schermen */
