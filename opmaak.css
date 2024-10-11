@@ -16,7 +16,7 @@ body {
 }
 
 /* Instellingen voor de tekst op de pagina */
-{
+*{
   text-align: left;
 }
 
@@ -176,3 +176,7 @@ flex-direction: column;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background: #ddd; color: rgb(84, 96, 134);}
+
+.column{
+  padding-top: 50px;
+}

@@ -1,7 +1,7 @@
 <DOCTYPE html> <!--dit is de homepage van mijn site-->
     <html data-theme="light"> <!--dit is het html-element-->
         <head> <!--dit is het head-element-->
-            <link rel="stylesheet" type="text/css" href="dropdown.css"> <!--dit is een link naar het css bestand zodat het de stijl kan gebruiken-->
+            <link rel="stylesheet" type="text/css" href="opmaak.css"> <!--dit is een link naar het css bestand zodat het de stijl kan gebruiken-->
             <title>Fysiekelaag</title> <!--dit is de titel van de pagina die bovenin het tablad staat-->
             <meta charset="utf-8"> <!--Dit is een element dat aangeeft welke code de computer moet gebruiken om de site leesbaar te maken voor ons-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--dit is een element dat aangeeft hoe de browser de grootte etc. van dingen moet laten zien-->
@@ -9,21 +9,22 @@
     
         <body> <!--hier begint de body van de pagina-->
         
-            <nav> <!--dit is de navigatie bar-->
+            <nav class="navbar"> <!--dit is de navigatie bar-->
                 <a href="index.html">Homepage</a> <!-- Een koppeling naar de startpagina. -->
                 <a href="informatica.html">Algemene informatie</a> <!-- Een koppeling naar de pagina met algemene informatie. -->
                 <a href="binairstelsel.html">Binair stelsel</a> <!-- Een koppeling naar de pagina over het binaire stelsel. -->
                 <a href="kleurmodellen.html">Kleurmodellen</a> <!-- Een koppeling naar de pagina over kleurmodellen. -->
                 <a href="bestandsformaten.html"> Bestandsformaten</a> <!-- Een koppeling naar de pagina over bestandsformaten. -->
                 <a href="compressie.html"> Compressie</a> <!-- Een koppeling naar de pagina over compressie. -->
-                <li class="dropdown active">
-                    <a href="Drielagenmodel.html" class="dropbtn">Drielagenmodel</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Computerarchitectuur</button>
                     <div class="dropdown-content">
-                        <a href="fysiekelaag.html" class="active">Fysieke laag</a>
-                        <a href="logischelaag.html">Logische laag</a>
-                        <a href="toepassingslaag.html">Toepassings laag</a>
+                      <a href="Drielagenmodel.html">Drielagenmodel</a>
+                      <a href="Fysiekelaag.html">Fysieke laag</a>
+                      <a href="Logischelaag.html">Logische laag</a>
+                      <a href="Toepassingslaag.html">Toepassingslaag</a>
                     </div>
-                </ul> <!--hier eindigt de unordened list-->
+                </div>
             </nav> <!--hier eindigt de navigatie bar-->
         
             <br> <!--dit element geeft een witregel aan-->
