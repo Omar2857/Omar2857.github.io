@@ -45,20 +45,21 @@
 <style>
   body {
       display: flex; /* Flexbox voor de body */
-      align-items: center; /* Centrerende verticale uitlijning */
+      justify-content: center; /* Horizontaal centreren */
+      align-items: center; /* Verticaal centreren */
       margin: 0; /* Geen standaard marge */
       height: 100vh; /* Volledige hoogte van het venster */
+      font-family: Arial, sans-serif; /* Lettertype */
   }
   .container {
       display: flex; /* Flexbox voor de container */
       width: 80%; /* Breedte van de container */
       margin: auto; /* Centreren in de pagina */
-      align-items: center; /* Centreren van items in de container */
+      align-items: flex-start; /* Bovenaan uitlijnen */
   }
   .text {
       flex: 1; /* De tekst neemt beschikbare ruimte in */
       margin-right: 20px; /* Ruimte tussen tekst en afbeelding */
-      font-size: 18px; /* Tekengrootte */
   }
   .image {
       flex-shrink: 0; /* Voorkomt dat de afbeelding krimpt */
@@ -67,6 +68,7 @@
       max-width: 100%; /* Maakt de afbeelding responsief */
       height: auto; /* Houdt de verhoudingen van de afbeelding intact */
   }
+</style>
 
 <footer>
   <div class="footer-content">
