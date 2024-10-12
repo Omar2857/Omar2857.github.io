@@ -42,7 +42,31 @@
 
 <img src="IMG_5926.jpg" alt="Drielagenmodel" width="720" height="480">
 
-
+<style>
+  body {
+      display: flex; /* Flexbox voor de body */
+      align-items: center; /* Centrerende verticale uitlijning */
+      margin: 0; /* Geen standaard marge */
+      height: 100vh; /* Volledige hoogte van het venster */
+  }
+  .container {
+      display: flex; /* Flexbox voor de container */
+      width: 80%; /* Breedte van de container */
+      margin: auto; /* Centreren in de pagina */
+      align-items: center; /* Centreren van items in de container */
+  }
+  .text {
+      flex: 1; /* De tekst neemt beschikbare ruimte in */
+      margin-right: 20px; /* Ruimte tussen tekst en afbeelding */
+      font-size: 18px; /* Tekengrootte */
+  }
+  .image {
+      flex-shrink: 0; /* Voorkomt dat de afbeelding krimpt */
+  }
+  img {
+      max-width: 100%; /* Maakt de afbeelding responsief */
+      height: auto; /* Houdt de verhoudingen van de afbeelding intact */
+  }
 
 <footer>
   <div class="footer-content">
