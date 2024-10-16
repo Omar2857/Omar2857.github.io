@@ -1,62 +1,69 @@
-<DOCTYPE html> <!--dit is de homepage van mijn site-->
-    <html data-theme="light"> <!--dit is het html-element-->
-        <head> <!--dit is het head-element-->
-            <link rel="stylesheet" type="text/css" href="opmaak.css"> <!--dit is een link naar het css bestand zodat het de stijl kan gebruiken-->
-            <title>Fysiekelaag</title> <!--dit is de titel van de pagina die bovenin het tablad staat-->
-            <meta charset="utf-8"> <!--Dit is een element dat aangeeft welke code de computer moet gebruiken om de site leesbaar te maken voor ons-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--dit is een element dat aangeeft hoe de browser de grootte etc. van dingen moet laten zien-->
-        </head> <!--hier eindigt het head element-->
+<!DOCTYPE html> <!-- Dit geeft aan dat het document een HTML5-pagina is -->
+<html data-theme="light"> <!-- Dit is het html-element, met een data-attribuut voor het thema (licht thema) -->
+    <head> <!-- Dit is het head-element, waar meta-informatie en links naar andere bestanden staan -->
+        <link rel="stylesheet" type="text/css" href="opmaak.css"> <!-- Dit is een link naar het CSS-bestand, zodat de pagina de opmaak kan gebruiken -->
+        <title>Fysiekelaag</title> <!-- Dit is de titel van de pagina, die bovenin het tabblad verschijnt -->
+        <meta charset="utf-8"> <!-- Dit meta-element specificeert de tekenset (UTF-8) voor het document, voor correcte weergave van tekst -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Dit zorgt ervoor dat de pagina goed schaalt op mobiele apparaten -->
+    </head> <!-- Einde van het head-element -->
+
+    <body> <!-- Dit is het begin van de body, het zichtbare gedeelte van de pagina -->
     
-        <body> <!--hier begint de body van de pagina-->
-        
-            <nav class="navbar"> <!--dit is de navigatie bar-->
-                <a href="index.html">Homepage</a> <!-- Een koppeling naar de startpagina. -->
-                <a href="informatica.html">Algemene informatie</a> <!-- Een koppeling naar de pagina met algemene informatie. -->
-                <a href="binairstelsel.html">Binair stelsel</a> <!-- Een koppeling naar de pagina over het binaire stelsel. -->
-                <a href="kleurmodellen.html">Kleurmodellen</a> <!-- Een koppeling naar de pagina over kleurmodellen. -->
-                <a href="bestandsformaten.html"> Bestandsformaten</a> <!-- Een koppeling naar de pagina over bestandsformaten. -->
-                <a href="compressie.html"> Compressie</a> <!-- Een koppeling naar de pagina over compressie. -->
-                <div class="dropdown">
-                    <button class="dropbtn">Computerarchitectuur</button>
-                    <div class="dropdown-content">
-                      <a href="Drielagenmodel.html">Drielagenmodel</a>
-                      <a href="Fysiekelaag.html">Fysieke laag</a>
-                      <a href="Logischelaag.html">Logische laag</a>
-                      <a href="Toepassingslaag.html">Toepassingslaag</a>
-                      <a href="cpu.html">Specifiek Onderwerp</a>
-                    </div>
+        <nav class="navbar"> <!-- Dit is het navigatiebalk-element voor de menu-items -->
+            <a href="index.html">Homepage</a> <!-- Link naar de startpagina van de site -->
+            <a href="informatica.html">Algemene informatie</a> <!-- Link naar de algemene informatiepagina -->
+            <a href="binairstelsel.html">Binair stelsel</a> <!-- Link naar de pagina over het binaire stelsel -->
+            <a href="kleurmodellen.html">Kleurmodellen</a> <!-- Link naar de pagina over kleurmodellen -->
+            <a href="bestandsformaten.html"> Bestandsformaten</a> <!-- Link naar de pagina over bestandsformaten -->
+            <a href="compressie.html"> Compressie</a> <!-- Link naar de pagina over compressie -->
+            <div class="dropdown"> <!-- Een dropdown-menu voor de computerarchitectuur sectie -->
+                <button class="dropbtn">Computerarchitectuur</button> <!-- De knop om het dropdown-menu te openen -->
+                <div class="dropdown-content"> <!-- Inhoud van het dropdown-menu -->
+                  <a href="Drielagenmodel.html">Drielagenmodel</a> <!-- Link naar de Drielagenmodel-pagina -->
+                  <a href="Fysiekelaag.html">Fysieke laag</a> <!-- Link naar de Fysieke laag-pagina -->
+                  <a href="Logischelaag.html">Logische laag</a> <!-- Link naar de Logische laag-pagina -->
+                  <a href="Toepassingslaag.html">Toepassingslaag</a> <!-- Link naar de Toepassingslaag-pagina -->
+                  <a href="cpu.html">Specifiek Onderwerp</a> <!-- Link naar een pagina over een specifiek onderwerp -->
                 </div>
-            </nav> <!--hier eindigt de navigatie bar-->
-        
-            <br> <!--dit element geeft een witregel aan-->
-            <br> <!--dit element geeft een witregel aan-->
-           
-            <header>
-                <p style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> De Toepassingslaag</p> <!-- Een welkomstbericht met aangepaste stijlen. -->
-              </header>
+            </div> <!-- Einde van de dropdown-menu -->
+        </nav> <!-- Einde van de navigatiebalk -->
     
+        <br> <!-- Dit is een lege regel om ruimte te creëren -->
+        <br> <!-- Nog een lege regel voor extra ruimte -->
+       
+        <header> <!-- Dit is het header-element, vaak gebruikt voor titels en belangrijke koppen -->
+            <p style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> De Toepassingslaag</p> <!-- Een grote tekst in serif-lettertype met aangepaste stijlen, die de kop aangeeft -->
+        </header>
+
+        <h2> Apps </h2> <!-- Dit is een kop (niveau 2) voor het onderdeel over apps -->
+        <p> 
+            Apps, ook wel applicaties genoemd, zijn softwareprogramma's die zijn ontwikkeld om bepaalde taken te vervullen op smartphones, tablets en andere technologische apparaten.
+            Ze omvatten zowel eenvoudige hulpmiddelen, zoals rekenmachines of agenda's, als ingewikkelde applicaties zoals sociale media-platforms, spellen en software voor productiviteit.
+            Apps worden vooral gedownload via applicatiewinkels zoals de 'Google Play Store' voor Android-telefoons en de 'Apple App Store' voor iOS-apparaten. Door apps hebben gebruikers de mogelijkheid om hun apparaten te personaliseren en extra functionaliteiten erbij toe te voegen, wat de gebruikerservaring optimaliseert en persoonlijke of doelen begeleid.
+        </p> <!-- Beschrijving over wat apps zijn en hoe ze worden gebruikt -->
+
+        <h2> API's </h2> <!-- Dit is een kop (niveau 2) voor het onderdeel over API's -->
+        <p>
+            API's (Application Programming Interfaces) zijn richtlijnen en protocollen die diverse softwaretoepassingen in staat stellen om met elkaar te werken.
+            Ze dienen als een interface, zodat systemen informatie en functies kunnen uitwisselen zonder dat de interne werking zichtbaar wordt.
+            API's maken het voor ontwikkelaars mogelijk om informatie aan te vragen of te verzenden, wat cruciaal is voor de integratie van diensten zoals betalingsverwerkers.
+        </p> <!-- Een uitleg over API's en hun rol in softwareontwikkeling -->
         
-            <h2> Apps </h2>
-                <p> Apps, ook wel applicaties genoemd, zijn softwareprogramma's die zijn ontwikkeld om bepaalde taken te vervullen op smartphones, tablets en andere technologische apparaten. Ze omvatten zowel eenvoudige hulpmiddelen, zoals rekenmachines of agenda's, als ingewikkelde applicaties zoals sociale media-platforms, spellen en software voor productiviteit. Apps worden vooral gedownload via applicatiewinkels zoals de 'Google Play Store' voor Android-telefoons en de 'Apple App Store' voor iOS-apparaten. Door apps hebben gebruikers de mogelijkheid om hun apparaten te personaliseren en extra functionaliteiten erbij toe te voegen, wat de gebruikerservaring optimaliseert en persoonlijke of doelen begeleid.
+        <p>
+            Bovendien stellen ze ontwikkelaars in staat om functionaliteit te gebruiken zonder de volledige code te doorgronden, wat de ontwikkeling van nieuwe applicaties vergemakkelijkt.
+            API's dragen bij aan automatisering door diverse apps met elkaar te laten werken en zijn essentieel voor schaalbaarheid. 
+            Goede voorbeelden zijn web-API's die HTTP gebruiken, en softwarebibliotheken met al vooraf ingestelde functies.  
+        </p> <!-- Meer informatie over  API's -->
 
-                </p>
+        <img src="Afbeeldingen/API.webp" alt="Windows" style="width:800px; height:500px;"> <!-- Een afbeelding die API's illustreert, aangepast in breedte en hoogte -->
 
-            <h2> API's </h2>
-                <p> API's (Application Programming Interfaces) zijn richtlijnen en protocollen die diverse softwaretoepassingen in staat stellen om met elkaar te werken. Ze dienen als een interface, zodat systemen informatie en functies kunnen uitwisselen zonder dat de interne werking zichtbaar wordt. API's maken het voor ontwikkelaars mogelijk om informatie aan te vragen of te verzenden, wat cruciaal is voor de integratie van diensten zoals betalingsverwerkers.
-                </p>
-                <p>Bovendien stellen ze ontwikkelaars in staat om functionaliteit te gebruiken zonder de volledige code te doorgronden, wat de ontwikkeling van nieuwe applicaties vergemakkelijkt. API's dragen bij aan automatisering door diverse apps met elkaar te laten werken en zijn essentieel voor schaalbaarheid. Goede voorbeelden zijn web-API's die HTTP gebruiken, en softwarebibliotheken met al vooraf ingestelde functies.  
-                </p>
+        <footer> <!-- Het begin van het footer-element, dat zich onderaan de pagina bevindt -->
+            <div class="footer-content"> <!-- De inhoud van de footer, die vaak algemene informatie bevat -->
+                <p>Made by Omar</p> <!-- Verwijzing naar de maker van de pagina -->
+                <p>Informatica</p> <!-- Vermelding van het onderwerp van de pagina -->
+                <p>© 2023</p> <!-- Copyright-verklaring met het jaar van publicatie -->
+            </div>
+        </footer> <!-- Einde van het footer-element -->
 
-                <img src="Afbeeldingen/API.webp" alt="Windows" style="width:800px; height:500px;"> 
-
-            <footer>
-                    <div class="footer-content">
-                    <p>Made by Omar</p> <!-- Verwijzing naar de maker van de pagina. -->
-                    <p>Informatica</p> <!-- Informatie over het onderwerp van de pagina. -->
-                    <p>© 2023</p> <!-- Het jaar van publicatie. -->
-                    </div>
-            </footer>
-
-
-        </body> <!--dit is het einde van de body van de pagina-->
-    </html> <!--dit is het einde van het html element-->
+    </body> <!-- Einde van de body van de pagina -->
+</html> <!-- Einde van het html-element -->
