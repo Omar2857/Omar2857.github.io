@@ -10,169 +10,173 @@ body {
   position: fixed; /* Hier wordt de navigatiebalk vastgezet bovenaan het scherm */
   top: 0;
   width: 100%;
-  background-image: url('Afbeeldingen/background.jpg'); /* achtergrond afbeelding in je menu */
+  background-image: url('Afbeeldingen/background.jpg'); /* Achtergrondafbeelding in je menu */
   background-size: cover; /* Hiermee wordt de afbeelding geschaald om de hele achtergrond te bedekken */
   background-repeat: no-repeat; /* Hiermee wordt herhaling van de afbeelding voorkomen */
 }
 
 /* Instellingen voor de tekst op de pagina */
 *{
-  text-align: left;
+  text-align: left; /* Tekst uitlijnen naar links */
 }
 
 /* Stijl voor koppelingen in de navigatiebalk */
 .navbar a {
-  float: left;
-  display: block;
-  color: #f9f5f5;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  float: left; /* Koppelingen links naast elkaar plaatsen */
+  display: block; /* Maak de koppelingen blokken */
+  color: #f9f5f5; /* Kleur van de tekst */
+  text-align: center; /* Centreert de tekst */
+  padding: 14px 16px; /* Padding voor de koppelingen */
+  text-decoration: none; /* Geen onderstreping */
+  font-size: 17px; /* Grootte van de tekst */
 }
 
 /* Stijl voor koppelingen in de navigatiebalk bij hover */
 .navbar a:hover {
-  background: #ddd;
-  color: rgb(84, 96, 134);
+  background: #ddd; /* Achtergrondkleur bij hover */
+  color: rgb(84, 96, 134); /* Kleur van de tekst bij hover */
 }
 
 /* Stijl voor de hoofdinhoud van de pagina */
 .main {
-  padding: 16px;
-  margin-top: 30px;
+  padding: 16px; /* Padding voor de hoofdinhoud */
+  margin-top: 30px; /* Margen aan de bovenkant om ruimte voor de navigatiebalk te geven */
   height: 1500px; /* Hier wordt de hoogte van de hoofdinhoud ingesteld, waardoor scrollen mogelijk is */
 }
 
 /* Stijl voor afbeeldingen en tekstcontainers */
 div.figure {
-  float: right;
-  width: 30%;
-  border: thin rgb(86, 193, 217) solid;
-  margin: 0.5em;
-  padding: 0.5em;
+  float: right; /* Plaats de figuren rechts */
+  width: 30%; /* Breedte van de figuur */
+  border: thin rgb(86, 193, 217) solid; /* Rand van de figuur */
+  margin: 0.5em; /* Marges rondom de figuur */
+  padding: 0.5em; /* Padding voor de inhoud van de figuur */
 }
 div.figure p {
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
+  text-align: center; /* Centreert de tekst in de figuur */
+  font-style: italic; /* Italic stijl voor de tekst */
+  font-size: smaller; /* Kleinere tekstgrootte */
+  text-indent: 0; /* Geen inspringing */
 }
 
 /* Stijl voor de achtergrond van het hele document */
 body {
-  background-image: image(background.jpg);
+  background-image: url('background.jpg'); /* Achtergrondafbeelding instellen */
   background-color: rgba(129, 196, 232, 0.256); /* Hier wordt de achtergrondkleur ingesteld met een semi-transparante overlay */
 }
 
 /* Stijl voor tabelopmaak */
 table {
-  border-collapse: collapse;
-  width: 100%;
+  border-collapse: collapse; /* Tabellen zonder dubbele randen */
+  width: 100%; /* Volledige breedte voor de tabel */
 }
 th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
+  border: 1px solid black; /* Rand voor tabelkoppen en cellen */
+  padding: 8px; /* Padding voor cellen */
+  text-align: left; /* Tekst uitlijnen naar links */
 }
 th {
-  background-color: #5a94a8;
+  background-color: #5a94a8; /* Achtergrondkleur voor tabelkoppen */
 }
 
 /* Stijl voor een container die zowel een afbeelding als tekst bevat */
 .container {
-  position: relative; 
+  position: relative; /* Positionering van de container */
   width: 300px; /* Pas de breedte van de container aan zoals nodig */
 }
 
 /* Stijl voor de afbeelding binnen de container */
 .image {
-  width: 100%;
+  width: 100%; /* Volledige breedte voor de afbeelding */
 }
 
 /* Stijl voor de tekst bovenop de afbeelding */
 .text {
-  position: absolute;
-  top: 50%;
+  position: absolute; /* Absolute positionering voor de tekst */
+  top: 50%; /* Plaats de tekst in het midden van de container */
   left: 0;
-  transform: translateY(-50%);
-  background-color: rgba(118, 155, 229, 0.7);
-  color: #10101074;
-  padding: 10px;
+  transform: translateY(-50%); /* Centreer de tekst verticaal */
+  background-color: rgba(118, 155, 229, 0.7); /* Achtergrondkleur voor de tekst met transparantie */
+  color: #10101074; /* Kleur van de tekst */
+  padding: 10px; /* Padding voor de tekst */
 }
 
 /* Stijl voor het centreren van de container in het venster */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: flex; /* Flexbox gebruiken voor centreren */
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  height: 100vh; /* Volledige hoogte van het venster */
 }
 
 /* Stijl voor de footer onderaan de pagina */
 footer {
-  background-color: rgb(9, 10, 10);
-  color: #f8f3f3;
-  padding: 15px;
-  text-align: center;
-  width: 100%;
+  background-color: rgb(9, 10, 10); /* Achtergrondkleur voor de footer */
+  color: #f8f3f3; /* Kleur van de tekst in de footer */
+  padding: 15px; /* Padding voor de footer */
+  text-align: center; /* Centreert de tekst in de footer */
+  width: 100%; /* Volledige breedte voor de footer */
 }
 
 /* Stijl voor de container met grid-indeling */
- {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
+.container {
+  display: grid; /* Grid-indeling voor de container */
+  grid-template-rows: 1fr auto; /* Rijen indelen in een flexibele en automatische indeling */
+  min-height: 100vh; /* Minimale hoogte voor de container */
 }
-
-
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  background-color: transparent; /* Achtergrondkleur van de dropdown knop */
+  color: white; /* Kleur van de tekst */
+  padding: 16px; /* Padding voor de knop */
+  font-size: 16px; /* Grootte van de tekst */
+  border: none; /* Geen rand */
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* De container <div> - nodig om de dropdown-inhoud te positioneren */
 .dropdown {
-  position: relative;
-  display: inline-block;
-  z-index: 100;
+  position: relative; /* Positionering voor de dropdown */
+  display: inline-block; /* Inline-block weergeven */
+  z-index: 100; /* Zorg ervoor dat het boven andere elementen staat */
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown-inhoud (standaard verborgen) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 100;
+  display: none; /* Standaard verborgen */
+  position: absolute; /* Absolute positionering voor de dropdown-inhoud */
+  background-color: #f1f1f1; /* Achtergrondkleur voor de dropdown-inhoud */
+  min-width: 160px; /* Minimale breedte voor de dropdown-inhoud */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Schaduw voor de dropdown-inhoud */
+  z-index: 100; /* Zorg ervoor dat het boven andere elementen staat */
 }
 
-/* Links inside the dropdown */
+/* Koppelingen binnen de dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
+  color: black; /* Kleur van de tekst in de dropdown-koppelingen */
+  padding: 12px 16px; /* Padding voor de dropdown-koppelingen */
+  text-decoration: none; /* Geen onderstreping */
+  display: flex; /* Flex weergeven voor de koppelingen */
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;
-  color: rgb(84, 96, 134);}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: flex;
-flex-direction: column;
+/* Wijzig kleur van dropdown-koppelingen bij hover */
+.dropdown-content a:hover {
+  background-color: #ddd; /* Achtergrondkleur bij hover */
+  color: rgb(84, 96, 134); /* Kleur van de tekst bij hover */
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background: #ddd; color: rgb(84, 96, 134);}
+/* Toon het dropdown-menu bij hover */
+.dropdown:hover .dropdown-content {
+  display: flex; /* Weergave van de dropdown-inhoud */
+  flex-direction: column; /* Rijen onder elkaar zetten */
+}
 
-.column{
-  padding-top: 50px;
+/* Wijzig de achtergrondkleur van de dropdown-knop wanneer de dropdown-inhoud wordt weergegeven */
+.dropdown:hover .dropbtn {
+  background: #ddd; /* Achtergrondkleur bij hover */
+  color: rgb(84, 96, 134); /* Kleur van de tekst bij hover */
+}
+
+.column {
+  padding-top: 50px; /* Padding aan de bovenkant voor de kolom */
 }
